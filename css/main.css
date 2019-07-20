@@ -21,11 +21,49 @@ body
 	margin: 10px;
 }
 
+.nav
+{
+	display: inline-block;
+	width: 10%;
+	float: right;
+	margin-right: 10px;
+	margin-left: auto;
+}
+
 .logo
 {
-	width: 100px;
-	margin-left: auto;
-	margin-right: auto;
+	display: inline-block;
+	width: 50%;
+}
+
+#burgerCon
+{
+	margin-bottom: 20px;
+	position: fixed;
+	width: 100%;
+	top: 85px;
+	background-color: rgba(255, 255, 255, 0.8);
+	
+	/* this should be off by default and toggled on with JavaScript */
+	display: none;
+}
+
+.show-mobile-nav 
+{
+	display: block !important;
+}
+
+#burgerCon li
+{
+	padding: 20px;
+	border-top: thin solid black;
+	text-align: center;
+}
+
+#burgerCon a
+{
+	text-decoration: none; 
+	color: #8ea86e;
 }
 
 @media screen and (min-width: 600px)
